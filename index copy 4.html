@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>positioning flexbox</title>
+<style>
+body,html{background-color:black;}
+p{color:white;}
+h2{font-weight: bold;font-size: 50px;color:white;}
+
+.container1 { 
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+    .leftImg {
+      
+        
+        position:relative;
+        left:0;
+        top:0;
+    }
+    .rightContent{
+        
+        width:700px;
+        padding-left:36px;
+        z-index:5;
+        
+
+    }
+
+.container2{ 
+   
+    
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    position:relative;
+    
+}
+ 
+
+
+.img2{right:0;bottom: 450px;
+  
+}
+
+
+
+.leftcontent{ width:500px;height:300px;position: absolute;
+left:70px;}
+
+
+.container3{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+   
+    
+}
+
+
+.img3{left:0; bottom:0;position: absolute;}
+
+.rightc{left:550px;position: relative;bottom:100px}
+
+
+</style>
+</head>
+<body>
+
+
+
+    <div class="container1">
+        <div class="leftImg">
+            <img src="human-holding-a-bread-745988.jpg" width="500" height="300">
+        </div>
+        <div class="rightContent">
+            <h2>lorem ipsum dolar</h2>
+            <p>What Does Lorem Ipsum Mean? Lorem ipsum, in graphical and textual context, 
+              refers to filler text that is placed in a document or visual presentation. 
+              Lorem ipsum is derived from the Latin 
+              "dolorem ipsum" roughly translated as "pain itself."
+            </p>
+        </div>
+    </div>
+
+    <div class="container2">
+       <div class="img2"> <img src="green-pineapple-fruit-with-brown-framed-sunglasses-beside-1161547.jpg" width="600px" height="500px"></div>
+        <div class="leftcontent">
+          <h2>lorem ipsum dolar</h2>
+        <p>What Does Lorem Ipsum Mean? Lorem ipsum,
+           in graphical and textual context, refers to filler text that i
+           s placed in a document or visual presentation. Lorem ipsum is de
+           rived from the Latin "dolorem ipsum" roug
+           hly translated as "pain itself."</p></div>
+    </div>
+
+    <div class="container3">
+        <div class=img3><img src="cooked-pasta-on-brown-wooden-bowl-803963.jpg" width="450px" height="300px"></div>
+        <div class=rightc>
+          <h2>lorem ipsum dolar</h2>
+        <p>What Does Lorem Ipsum M
+          ean? Lorem ipsum, in graphical and textual 
+          context, refers to filler text that is placed in a
+           document or visual presentation. Lorem ipsum is derived from the L
+           atin "dolorem ipsum" roughly translated as
+            "pain itself</p></div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
